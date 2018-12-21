@@ -1,6 +1,6 @@
 import { config } from 'dotenv'
 import * as Platform from '../index'
-config({ path: '.env' })
+config({ path: '../.env' })
 const Bot = Platform.BaleBot
 
 let bot = new Bot(process.env.BALE_TOKEN)

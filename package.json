@@ -17,8 +17,11 @@
     "url": "https://github.com/familysoltani/bale4ts/issues"
   },
   "homepage": "https://github.com/familysoltani/bale4ts#readme",
-  "dependencies": {},
+  "dependencies": {
+    "debug": "^4.1.0"
+  },
   "devDependencies": {
+    "@types/debug": "0.0.31",
     "@types/node": "^10.12.18",
     "@types/dotenv": "^6.1.0",
     "dotenv": "^6.2.0"
