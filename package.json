@@ -18,12 +18,14 @@
   },
   "homepage": "https://github.com/familysoltani/bale4ts#readme",
   "dependencies": {
-    "debug": "^4.1.0"
-  },
-  "devDependencies": {
     "@types/debug": "0.0.31",
-    "@types/node": "^10.12.18",
     "@types/dotenv": "^6.1.0",
-    "dotenv": "^6.2.0"
-  }
+    "@types/node": "^10.12.18",
+    "crc-32": "^1.2.0",
+    "debug": "^4.1.0",
+    "dotenv": "^6.2.0",
+    "request": "^2.88.0",
+    "ws": "^6.1.2"
+  },
+  "devDependencies": {}
 }
