@@ -1,19 +1,7 @@
 {
   "compilerOptions": {
-    "types": [
-      "node",
-      "ws",
-      "chai",
-      "mocha",
-      "sinon"
-    ],
-    "typeRoots" : ["./node_modules/@types"],
-    "noImplicitAny": true,
-    "noEmitOnError": true,
-    "sourceMap": true,
     "target": "es6",
     "module": "commonjs",
-    "outDir": "./lib/ir/bale/botplatform"
-  },
-  "compileOnSave": true
+    "sourceMap": true
+  }
 }
