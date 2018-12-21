@@ -1,20 +1,26 @@
 {
-  "name": "bale4ts3",
+  "name": "bale4ts",
   "version": "0.0.1",
-  "description": "Bale SDK with ts3",
+  "description": "Bale SDK with typescript",
   "main": "index.ts",
   "scripts": {
     "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/familysoltani/bale4ts3.git"
+    "url": "git+https://github.com/familysoltani/bale4ts.git"
   },
   "keywords": [],
   "author": "ms",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/familysoltani/bale4ts3/issues"
+    "url": "https://github.com/familysoltani/bale4ts/issues"
   },
-  "homepage": "https://github.com/familysoltani/bale4ts3#readme"
+  "homepage": "https://github.com/familysoltani/bale4ts#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "@types/dotenv": "^6.1.0",
+    "dotenv": "^6.2.0"
+  }
 }
