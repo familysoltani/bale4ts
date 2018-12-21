@@ -1,5 +1,6 @@
+import { config } from 'dotenv'
+config({ path: '.env' })
 import * as Debug from 'debug'
-
 const _info = Debug('info')
 const _debug = Debug('debug')
 const _error = Debug('error')

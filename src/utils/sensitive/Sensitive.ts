@@ -1,7 +1,5 @@
+import { Message } from '../../models/message/Message'
 
-import {Message} from "../../models/message/Message";
-
-export interface Sensitive{
-
-    match(message: Message): boolean;
+export interface Sensitive {
+  match(message: Message): boolean
 }

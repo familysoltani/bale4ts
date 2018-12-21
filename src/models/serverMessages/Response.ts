@@ -1,7 +1,7 @@
-import {ServerPacket} from "./ServerPacket";
+import { ServerPacket } from './ServerPacket'
 
 export abstract class Response extends ServerPacket {
-    public rid:string;
+  public rid: string
 
-    //Polymorphism holder! For Response abstraction.
+  //Polymorphism holder! For Response abstraction.
 }

@@ -7,15 +7,10 @@ import { Conversation } from '../../utils/Conversation'
 import { Sensitive } from '../../utils/sensitive/Sensitive'
 import { SendMessageRequest } from '../../models/clientMessages/SendMessageRequest'
 import { Request } from '../../models/clientMessages/Request'
-import { Response } from '../../models/serverMessages/Response'
 import { Peer } from '../../models/Peer'
 import { ReceivedMessage } from '../../models/serverMessages/ReceivedMessage'
-import { MessageReadStatus } from '../../models/serverMessages/MessageReadStatus'
-import { MessageReceivedStatus } from '../../models/serverMessages/MessageReceivedStatus'
 import { BalePromises } from '../../utils/BalePromises'
 import { Logger } from '../../utils/Logger'
-import { ApiConst } from '../../constants/ApiConst'
-import { ReceiptMessage } from '../../models/message/ReceiptMessage'
 
 import { FileDownloadLinkRequest } from '../../models/clientMessages/FileDownloadLinkRequest'
 import { FileUploadLinkRequest } from '../../models/clientMessages/FileUploadLinkRequest'
@@ -32,7 +27,6 @@ export class BaleBot {
   private _hearsPacks: HearsPack[]
   private _apiConnection: ApiConnection
   private _conversations: Conversation[]
-  private _userId: number
   private _defaultCallback: (
     message: Message,
     responder: Responder,
@@ -57,7 +51,6 @@ export class BaleBot {
   private checkOptions(options: any) {
     if (options) {
       if (options.userId) {
-        this._userId = options.userId
       }
       if (options.requestQueue) {
         if (typeof options.requestQueue.timeout !== 'undefined')

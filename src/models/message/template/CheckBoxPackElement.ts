@@ -1,5 +1,5 @@
-import {Element} from "./Element";
+import { Element } from './Element'
 
 export class CheckBoxPackElement extends Element {
-    //TODO implement
+  //TODO implement
 }

@@ -1,4 +1,4 @@
 export interface Jsonable {
-    getJsonObject(): any;
-    manipulateFromJsonObject(jsonObject: any): void;
+  getJsonObject(): any
+  manipulateFromJsonObject(jsonObject: any): void
 }

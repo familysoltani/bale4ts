@@ -1,19 +1,17 @@
-import {MessageStatus} from "./MessageStatus";
+import { MessageStatus } from './MessageStatus'
 /**
  * Created by emran on 3/2/17.
  */
 export class MessageReceivedStatus extends MessageStatus {
+  private _receivedDate: number
 
-    private _receivedDate: number;
+  constructor(jsonPacket: string) {
+    super(jsonPacket)
 
-    constructor(jsonPacket:string){
-        super(jsonPacket);
+    this._receivedDate = this.body.receivedDate
+  }
 
-        this._receivedDate = this.body.receivedDate;
-    }
-
-    get statusDate(): number {
-        return this._receivedDate;
-    }
-
+  get statusDate(): number {
+    return this._receivedDate
+  }
 }
