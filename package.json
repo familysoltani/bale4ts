@@ -1,7 +1,7 @@
 {
   "name": "bale4ts",
   "version": "0.0.1",
-  "description": "Bale SDK with typescript",
+  "description": "Bale SDK for typescript projects",
   "main": "index.ts",
   "scripts": {
     "build": "tsc"
